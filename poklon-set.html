@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Poklon set sa imenom · Unique Sign</title>
+<meta name="description" content="Složite poklon set za bebu: radosnica, lančić za cuclu, peškir sa vezom, bodić i kartice, sve sa bebinim imenom, u kutiji sa imenom zlatnim slovima.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Mulish:wght@400;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1f92cb; --blue-deep:#136f9e; --blue-soft:#e6f3fa;
+  --coral:#f08d6e; --coral-deep:#c9603f; --coral-soft:#fdeee8;
+  --paper:#fffdfb; --ink:#23394a; --muted:#6c7a86; --line:#eadfd8;
+  --gold-grad:linear-gradient(100deg,#a67c2e 0%,#e7c874 45%,#b8913a 70%,#e9d08a 100%);
+  --radius:22px; --shadow:0 16px 36px -18px rgba(35,57,74,.32);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Mulish",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,textarea,select{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.05}
+.name{font-family:"Great Vibes",cursive;font-weight:400;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .08em}
+.coral{color:var(--coral-deep);font-style:italic}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:15px 28px;border-radius:999px;font-weight:800;font-size:15px;border:2px solid var(--blue);transition:transform .15s,background .15s,color .15s;cursor:pointer}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-deep);border-color:var(--blue-deep);transform:translateY(-2px)}
+.btn-line{background:#fff;color:var(--blue-deep)}
+.btn-line:hover{background:var(--blue);color:#fff}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--coral-deep)}
+
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,253,251,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{width:52px;height:52px;border-radius:50%}
+.logo span{font-family:"Great Vibes",cursive;font-size:30px;color:var(--blue);line-height:1}
+.logo span i{font-style:normal;color:var(--coral)}
+nav.main{display:flex;gap:28px;font-weight:700;font-size:15px}
+nav.main a{padding:4px 0;border-bottom:2px solid transparent}
+nav.main a:hover,nav.main a.on{border-color:var(--coral)}
+.icons{display:flex;gap:10px;align-items:center}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--line);background:#fff;position:relative;cursor:pointer}
+.icon-btn svg{width:19px;height:19px;stroke:var(--ink);fill:none;stroke-width:2}
+.badge{position:absolute;top:-4px;right:-4px;background:var(--coral-deep);color:#fff;font-size:11px;font-weight:800;min-width:19px;height:19px;border-radius:10px;display:grid;place-items:center;transition:transform .2s}
+.badge.bump{transform:scale(1.35)}
+.menu-btn{display:none}
+.mobile-nav{display:none}
+
+.crumbs{display:flex;gap:10px;font-size:13px;color:var(--muted);font-weight:700;padding:22px 0}
+.crumbs a:hover{color:var(--coral-deep)}
+
+.product{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;padding-bottom:80px}
+.left{position:sticky;top:96px;display:grid;gap:16px}
+.stage{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1;background:#fff;box-shadow:var(--shadow)}
+.stage img{width:100%;height:100%;object-fit:cover;transition:opacity .16s}
+.tag{position:absolute;top:16px;left:16px;background:var(--coral-deep);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 11px;border-radius:999px;z-index:2}
+.thumbs{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.thumbs button{border:2px solid transparent;border-radius:14px;overflow:hidden;padding:0;cursor:pointer;aspect-ratio:1;background:#fff}
+.thumbs button.on{border-color:var(--coral-deep)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+
+/* live box preview */
+.preview{border-radius:var(--radius);padding:22px;background:var(--blue-soft);display:flex;gap:18px;align-items:center}
+.box{flex:0 0 46%;aspect-ratio:1.25;border-radius:10px;position:relative;display:grid;place-items:center;box-shadow:0 18px 26px -18px rgba(35,57,74,.55),inset 0 -8px 0 rgba(0,0,0,.05);transition:background .25s}
+.box::after{content:"";position:absolute;left:0;right:0;bottom:0;height:12%;background:rgba(0,0,0,.06);border-radius:0 0 10px 10px}
+.box .name{font-size:clamp(26px,4.2vw,44px);line-height:1.1;text-align:center;max-width:92%;overflow-wrap:anywhere}
+.box .name::after{content:"♡";font-family:"Mulish";font-size:.45em;vertical-align:.6em;margin-left:.1em}
+.box.off{opacity:.35;filter:grayscale(.6)}
+.preview .t small{display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-deep)}
+.preview .t p{font-size:14px;color:var(--muted);margin-top:6px}
+.preview .t .ded{font-family:"Great Vibes",cursive;font-size:22px;color:#a67c2e;margin-top:6px;min-height:28px;overflow-wrap:anywhere}
+
+.info h1{font-size:clamp(42px,4.8vw,62px);margin:10px 0 10px}
+.rating{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--muted);font-weight:700}
+.rating .stars{color:var(--coral);letter-spacing:2px}
+.pricebox{display:flex;align-items:baseline;gap:12px;margin:18px 0 4px;flex-wrap:wrap}
+.pricebox .now{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:44px;color:var(--blue-deep)}
+.pricebox .note{font-size:13px;color:var(--muted);font-weight:700}
+.intro{color:var(--muted);font-size:16.5px;margin:10px 0 4px;max-width:52ch}
+
+.opt{margin-top:28px}
+.opt-head{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:15px;margin-bottom:12px;gap:12px}
+.opt-head .count{font-size:13px;font-weight:800;color:var(--coral-deep);background:var(--coral-soft);padding:4px 12px;border-radius:999px;white-space:nowrap}
+.field{width:100%;border:1.5px solid var(--line);border-radius:16px;background:#fff;padding:14px 16px;outline:0;font-size:16px}
+.field:focus{border-color:var(--blue)}
+.seg{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:4px;background:#fff;margin-top:10px}
+.seg button{border:0;background:transparent;border-radius:999px;padding:7px 16px;font-weight:800;font-size:13.5px;cursor:pointer;color:var(--muted)}
+.seg button.on{background:var(--blue);color:#fff}
+
+.items{display:grid;gap:10px}
+.item{border:1.5px solid var(--line);border-radius:18px;background:#fff;padding:10px 14px 10px 10px;transition:border-color .15s,background .15s}
+.item label.top{display:flex;gap:14px;align-items:center;cursor:pointer}
+.item img{width:58px;height:58px;border-radius:12px;object-fit:cover;flex:0 0 58px}
+.item .t{flex:1;min-width:0}
+.item .t b{display:block;font-size:15px}
+.item .t small{color:var(--muted);font-size:13px}
+.item .p{font-weight:800;font-size:14px;white-space:nowrap;color:var(--blue-deep)}
+.item input[type=checkbox]{width:20px;height:20px;accent-color:var(--blue);flex:0 0 20px}
+.item.on{border-color:var(--blue);background:#f6fbfe}
+.item .sub{display:none;padding:10px 0 4px 72px;gap:8px;flex-wrap:wrap}
+.item.on .sub{display:flex}
+.pill{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:6px 13px;font-size:13px;font-weight:800;cursor:pointer}
+.pill.on{border-color:var(--blue);background:var(--blue);color:#fff}
+
+.colors{display:flex;gap:12px;flex-wrap:wrap}
+.sw{display:flex;align-items:center;gap:10px;border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:6px 16px 6px 6px;cursor:pointer;font-weight:800;font-size:14px}
+.sw i{width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.sw.on{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.boxrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;font-size:14.5px;font-weight:700}
+.switch{display:flex;align-items:center;gap:10px;cursor:pointer}
+.switch input{width:20px;height:20px;accent-color:var(--blue)}
+
+.ship{display:grid;gap:8px}
+.ship label{display:flex;gap:12px;align-items:center;border:1.5px solid var(--line);background:#fff;border-radius:16px;padding:12px 16px;cursor:pointer;font-size:14.5px}
+.ship label span{flex:1}
+.ship label small{display:block;color:var(--muted);font-size:12.5px}
+.ship label b{white-space:nowrap}
+.ship input{accent-color:var(--blue);width:18px;height:18px}
+.ship label:has(input:checked){border-color:var(--blue);background:#f6fbfe}
+textarea.field{min-height:84px;resize:vertical}
+
+.summary{margin-top:26px;border:1.5px dashed var(--line);border-radius:18px;padding:16px 18px;background:#fff;font-size:14.5px}
+.summary .l{display:flex;justify-content:space-between;gap:12px;padding:3px 0}
+.summary .l span:first-child{color:var(--muted)}
+.summary .tot{border-top:1.5px solid var(--line);margin-top:8px;padding-top:10px;font-weight:800;font-size:16px}
+.buy{display:flex;gap:12px;margin-top:20px}
+.buy .btn{flex:1}
+.dm{width:100%;margin-top:10px}
+.dm-note{font-size:13px;color:var(--muted);text-align:center;margin-top:8px}
+
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.perk{background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:14px 10px;text-align:center;font-size:13px;font-weight:800}
+.perk span{display:block;font-size:22px;margin-bottom:4px}
+
+.acc{margin-top:26px;border-top:1.5px solid var(--line)}
+.acc details{border-bottom:1.5px solid var(--line);padding:18px 0;overflow:hidden}
+.acc summary{cursor:pointer;list-style:none;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:23px;display:flex;justify-content:space-between}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";font-family:"Mulish";font-weight:800;font-size:22px;color:var(--coral-deep);transition:transform .2s}
+.acc details[open] summary::after{transform:rotate(45deg)}
+.acc .inner{color:var(--muted);margin-top:10px;font-size:15px}
+.acc ul{padding-left:18px;display:grid;gap:6px}
+
+section.block{padding:90px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(34px,4.2vw,54px);margin-top:8px}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.strip figure{border-radius:20px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+.strip img{width:100%;aspect-ratio:1;object-fit:cover}
+.strip figcaption{padding:12px 14px;font-weight:800;font-size:14px}
+.strip figcaption .name{font-size:22px;font-weight:400}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:22px}
+.rev .bubble{background:var(--blue-soft);border-radius:20px 20px 20px 6px;padding:14px 16px;font-size:15px;line-height:1.5}
+.rev .who{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:13px;color:var(--muted);font-weight:700}
+.rev .who i{width:26px;height:26px;border-radius:50%;background:conic-gradient(var(--blue),var(--coral),var(--blue))}
+.rev .who b{color:var(--ink)}
+
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,calc(100% + 40px));visibility:hidden;background:var(--ink);color:#fff;padding:14px 22px;border-radius:999px;font-size:14px;font-weight:700;z-index:90;transition:transform .3s;box-shadow:var(--shadow);max-width:calc(100% - 32px);text-align:center}
+.toast.show{transform:translate(-50%,0);visibility:visible}
+.sticky-buy{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:12px 16px;display:none;align-items:center;gap:12px;z-index:80;box-shadow:0 -10px 24px -18px rgba(0,0,0,.4)}
+.sticky-buy .t{flex:1;min-width:0}
+.sticky-buy .t small{display:block;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sticky-buy .t b{font-size:17px}
+.sticky-buy .btn{padding:12px 20px}
+
+footer{background:#16303f;color:#c9d6de;padding:60px 0 28px;margin-top:40px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer h4{color:#fff;font-family:"Cormorant Garamond",serif;font-size:22px;margin-bottom:12px;font-weight:600}
+footer li{list-style:none;margin:8px 0;font-size:14px}
+footer li a:hover{color:var(--coral)}
+footer .logo span{color:#fff}
+footer .legal{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;font-size:13px;opacity:.7;flex-wrap:wrap;gap:12px}
+
+@media (max-width:1024px){
+  .strip{grid-template-columns:repeat(2,1fr)}
+  .revs{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  nav.main{display:none}
+  .menu-btn{display:grid}
+  header.site.menu-open .mobile-nav{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;padding:8px 24px 18px;border-bottom:1px solid var(--line);box-shadow:0 14px 24px -18px rgba(0,0,0,.35)}
+  .mobile-nav a{padding:13px 0;font-size:17px;border-bottom:1px solid var(--line)}
+  .mobile-nav a:last-child{border-bottom:0}
+  .product{grid-template-columns:1fr;gap:30px}
+  .left{position:static}
+  .revs{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr}
+  .sticky-buy.show{display:flex}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .preview{flex-direction:column;align-items:stretch;padding:18px}
+  .box{flex:none;width:100%}
+  .box .name{font-size:44px}
+  .item .sub{padding-left:0}
+  .item img{width:48px;height:48px;flex-basis:48px}
+  .perk{font-size:12px;padding:12px 6px}
+  section.block{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Unique Sign logo"><span>Unique<i>Sign</i></span></a>
+    <nav class="main" aria-label="Glavna navigacija">
+      <a class="on" href="poklon-set.html">Poklon set</a>
+      <a href="index.html#radosnica">Radosnica</a>
+      <a href="index.html#dnevnik">Dnevnik za trudnice</a>
+      <a href="index.html#kolekcija">Lančići i peškiri</a>
+      <a href="index.html#cenovnik">Cenovnik</a>
+      <a href="index.html#utisci">Utisci</a>
+    </nav>
+    <div class="icons">
+      <a class="icon-btn" href="#" aria-label="Pretraga"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" id="cartCount">0</span></a>
+      <button class="icon-btn menu-btn" aria-label="Meni" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <nav class="crumbs" aria-label="Putanja"><a href="index.html">Početna</a><span>/</span><span>Poklon set sa imenom</span></nav>
+
+  <div class="product">
+    <div class="left">
+      <div class="stage"><span class="tag">Sve sa imenom</span><img id="stageImg" src="img/Ddo9U1WDMMk.jpg" alt="Poklon set sa imenom"></div>
+      <div class="thumbs" id="thumbs"></div>
+      <div class="preview" aria-live="polite">
+        <div class="box" id="box"><span class="name" id="boxName">Derija</span></div>
+        <div class="t"><small>Vaša kutija</small><div class="ded" id="boxDed"></div><p id="boxNote">Ime zlatnim slovima na poklopcu. Pre izrade dobijate pripremu na odobrenje.</p></div>
+      </div>
+    </div>
+
+    <div class="info">
+      <span class="eyebrow">Poklon za babine · za prvi susret</span>
+      <h1>Poklon set <span class="coral">sa imenom</span></h1>
+      <div class="rating"><span class="stars">♥♥♥♥♥</span><a href="#utisci" style="text-decoration:underline;text-underline-offset:3px">Pročitajte vaše utiske</a></div>
+
+      <div class="pricebox"><span class="now" id="price">0 din</span><span class="note" id="priceNote">za izabrano, bez poštarine</span></div>
+      <p class="intro">Jedan komplet, a toliko uspomena. Izaberite šta ide u set, upišite bebino ime, a mi sve personalizujemo i spakujemo u kutiju sa imenom.</p>
+
+      <div class="opt">
+        <div class="opt-head"><label for="babyName">1. Bebino ime</label><span class="count" id="nameCount">6 / 14</span></div>
+        <input class="field" id="babyName" maxlength="14" value="Derija" placeholder="Npr. Mila, Bogdan, Iskra…" autocomplete="off">
+        <div class="seg" role="group" aria-label="Pismo"><button type="button" class="on" data-s="lat">Latinica</button><button type="button" data-s="cyr">Ćirilica</button></div>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head">2. Šta ide u set <span class="count" id="pickCount">0 izabrano</span></div>
+        <div class="items" id="items"></div>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head">3. Kutija sa imenom</div>
+        <div class="boxrow"><label class="switch"><input type="checkbox" id="boxOn" checked> Spakujte u kutiju sa imenom</label><b style="color:var(--blue-deep)">+750 din</b></div>
+        <div class="colors" id="colors"></div>
+        <input class="field" id="dedication" maxlength="40" placeholder="Posveta u kutiji, po želji (npr. Voli te kuma)" style="margin-top:12px">
+      </div>
+
+      <div class="opt">
+        <div class="opt-head">4. Dostava</div>
+        <div class="ship" id="ship"></div>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head"><label for="note">5. Napomena</label></div>
+        <textarea class="field" id="note" placeholder="Datum rođenja, boje perlica, figurica na lančiću, veličina bodića, kada vam treba paket…"></textarea>
+      </div>
+
+      <div class="summary" id="summary"></div>
+
+      <div class="buy">
+        <button class="btn btn-blue" id="addBtn" type="button" onclick="addToCart()">Dodaj u korpu</button>
+      </div>
+      <button class="btn btn-line dm" type="button" onclick="sendDM()">Pošalji porudžbinu u DM 💌</button>
+      <p class="dm-note">Kopiramo vaš set u poruku, a vi je samo nalepite na Instagramu.</p>
+
+      <div class="perks">
+        <div class="perk"><span>✍️</span>Priprema na odobrenje</div>
+        <div class="perk"><span>💳</span>Uplata unapred</div>
+        <div class="perk"><span>📦</span>Pošta i paketomat</div>
+      </div>
+
+      <div class="acc">
+        <details open><summary>Opis</summary><div class="inner">
+          <p>Kada želiš da poklon za bebu bude stvarno poseban. Svaki deo seta nosi bebino ime: izvezeno na peškiru, od perlica na lančiću i zlatnim slovima na radosnici i kutiji. Ime radimo latinicom ili ćirilicom, kako vi želite.</p>
+        </div></details>
+        <details><summary>Šta je u radosnici</summary><div class="inner"><ul>
+          <li>„Moje uspomene“, prva bebina knjiga, štampana na ćirilici</li>
+          <li>Narukvice iz porodilišta, otisak dlana i stopala, prostor za prvi čuperak</li>
+          <li>Pismo roditelja sa kovertom, „Ovo sam ja“, moje prvo letovanje</li>
+          <li>Pesmice i puno prostora za fotografije</li>
+          <li>Sa imenom 1.900 din, sa imenom i kratkom posvetom 2.000 din</li>
+        </ul></div></details>
+        <details><summary>Lančić, peškir i bodić</summary><div class="inner"><ul>
+          <li><b>Lančić za cuclu</b>: ime od perlica i figurica po izboru, 1.400 din. Uz glodalicu 1.900 din.</li>
+          <li><b>Peškir sa vezom</b>: peškir sa kapuljačom 50×90 cm, izvezeno ime i motiv, 1.300–1.600 din</li>
+          <li><b>Bodić sa natpisom</b>: npr. „Bakina i dekina“, 1.000–1.100 din</li>
+          <li><b>Kartice bebine prve godine</b>: 46 natpisa, 800 din</li>
+        </ul></div></details>
+        <details><summary>Poručivanje i dostava</summary><div class="inner">
+          <p>Uplata unapred je obavezna. Nakon potvrde o uplati počinjemo sa radom, a fiskalni račun šaljemo uz paket. Pakete šaljemo Post Expressom: na adresu pošte od 300 din, u paketomat od 300 din, na vašu adresu od 420 din, zavisno od težine. Hitne porudžbine ne radimo, a vikendom ne radimo, pa vas molimo da poručite na vreme. Personalizovane proizvode ne menjamo.</p>
+        </div></details>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="block" style="background:var(--blue-soft);border-radius:40px;margin:0 16px">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Iz naše radionice</span><h2>Svaki set je <span class="coral">nečiji</span></h2></div><a class="btn btn-line" href="https://www.instagram.com/unique_sign_/" target="_blank" rel="noopener">Još na Instagramu</a></div>
+    <div class="strip">
+      <figure><img src="img/Ddqnsh4jC_H.jpg" alt="Set Gavrilo"><figcaption><span class="name">Гаврило</span><br>peškir · lančić · radosnica</figcaption></figure>
+      <figure><img src="img/DdrNjORjCAF_03.jpg" alt="Set Antonio"><figcaption><span class="name">Антонио</span><br>peškir · bodić · lančić · radosnica</figcaption></figure>
+      <figure><img src="img/DdpEOtxDDXh_03.jpg" alt="Set Bogdan u mint kutiji"><figcaption><span class="name">Богдан</span><br>lančić · radosnica · kutija</figcaption></figure>
+      <figure><img src="img/DduJxl8DAPz_07.jpg" alt="Paket za Iskru"><figcaption><span class="name">Искра</span><br>bodić · lančić · radosnica</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow" id="utisci">Vaši utisci</span><h2>Kad paket <span class="coral">stigne</span></h2></div></div>
+    <div class="revs">
+      <div class="rev"><div class="bubble">Stigao nam je paketic 😊 Odusevila sam se 😍 Lancic je ispao bas kako treba, a radosnici sam se jos vise obradovala bas ima sve sto treba ni previse ni premalo, pesmice su vam najdivnije ❤️</div><div class="who"><i></i><span><b>Poruka kupca</b> · lančić i radosnica</span></div></div>
+      <div class="rev"><div class="bubble">Toliko sam radosnica kupovala i gledala do sada, ali ovo je jedina radosnica koja ima sve - i prostor za prvi čuperak, za narukvice iz porodilišta, bebine otiske... + ono pismo roditelja.</div><div class="who"><i></i><span><b>Poruka kupca</b> · radosnica</span></div></div>
+      <div class="rev"><div class="bubble">Kad Jakov izgubi a @unique_sign_ napravi novi i lepši lančić za našu dudu 🤗❤️💙</div><div class="who"><i></i><span><b>Aleksandra</b> · lančić za cuclu</span></div></div>
+      <div class="rev"><div class="bubble">Predivna štampa, preslatke ilustracije, puno odeljaka, pesme.... Ostaje samo da je popunimo.</div><div class="who"><i></i><span><b>Milena</b> · radosnica</span></div></div>
+      <div class="rev"><div class="bubble">Hejj, stigle su mi kartice. Prelepee su. 😍</div><div class="who"><i></i><span><b>Poruka kupca</b> · kartice</span></div></div>
+      <div class="rev"><div class="bubble">Prezadovoljna sam 😆 Hvala puno na saradnji i svaka vam cast na posvecenosti i profesionalnom pristupu musterijama.</div><div class="who"><i></i><span><b>Poruka kupca</b> · porudžbina</span></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="logo" href="index.html"><img src="img/logo.jpg" alt=""><span>Unique<i>Sign</i></span></a>
+        <p style="margin-top:16px;font-size:14px;max-width:32ch">Personalizovani pokloni za trudnice i bebe ❤️ Vikendom neradni dani.</p></div>
+      <div><h4>Prodavnica</h4><ul><li><a href="poklon-set.html">Poklon set</a></li><li><a href="index.html#radosnica">Radosnica</a></li><li><a href="index.html#dnevnik">Dnevnik za trudnice</a></li><li><a href="index.html#cenovnik">Cenovnik</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li><a href="https://www.instagram.com/unique_sign_/" target="_blank" rel="noopener">Instagram @unique_sign_</a></li><li><a href="https://ig.me/m/unique_sign_" target="_blank" rel="noopener">Poručivanje u DM 💌</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Unique Sign. Sva prava zadržana.</span><span>Cene prema cenovniku brenda · poštarina po cenovniku Post Expressa</span></div>
+  </div>
+</footer>
+
+<div class="sticky-buy" id="stickyBuy">
+  <div class="t"><small id="stickyName">Poklon set</small><b id="stickyPrice">0 din</b></div>
+  <button class="btn btn-blue" type="button" onclick="addToCart()">Dodaj u korpu</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* prices from the brand's price list (post DZzetmRseao) and captions */
+const ITEMS = [
+  {id:'radosnica', name:'Radosnica „Moje uspomene“', info:'prva bebina knjiga, ime zlatnim slovima', img:'img/DdtLcHYDKsN.jpg', on:true,
+   vars:[{l:'Sa imenom', p:1900},{l:'Sa imenom i kratkom posvetom', p:2000},{l:'Bez imena', p:1700}]},
+  {id:'lancic', name:'Lančić za cuclu', info:'ime od perlica, figurica po izboru', img:'img/DdGtrdSMAP0.jpg', on:true,
+   vars:[{l:'Lančić', p:1400},{l:'Lančić + glodalica', p:1900}]},
+  {id:'peskir', name:'Peškir sa vezom', info:'50×90 cm, ime i motiv · 1.300–1.600 din, zavisno od veza', img:'img/DdHZORKjN-J.jpg', on:false, from:true,
+   vars:[{l:'Meda', p:1300},{l:'Slonić', p:1300},{l:'Minnie', p:1300},{l:'Mickey', p:1300},{l:'Kruna', p:1300},{l:'Srce', p:1300}]},
+  {id:'bodic', name:'Bodić sa natpisom', info:'npr. „Bakina i dekina“', img:'img/DduJxl8DAPz_05.jpg', on:false,
+   vars:[{l:'Bodić', p:1100}]},
+  {id:'kartice', name:'Kartice bebine prve godine', info:'46 natpisa za fotografisanje', img:'img/DduJxl8DAPz_03.jpg', on:false,
+   vars:[{l:'Komplet', p:800}]},
+];
+const COLORS = [
+  {id:'roze', name:'Roze', c:'#f3c9cb', img:'img/kutija-roze.jpg'},
+  {id:'plava', name:'Plava', c:'#9fd4ec', img:'img/kutija-plava.jpg'},
+  {id:'mint', name:'Mint', c:'#a8cdc4', img:'img/kutija-mint.jpg'},
+];
+const SHIP = [
+  {id:'posta', name:'Preuzimanje u pošti', info:'do 0,5 kg · 0,5–1 kg 350 din · 1–2 kg 400 din', p:300},
+  {id:'paketomat', name:'Paketomat', info:'zavisno od težine 300–400 din', p:300},
+  {id:'adresa', name:'Na vašu adresu', info:'paket do 0,5 kg', p:420},
+];
+const GALLERY = ['img/Ddo9U1WDMMk.jpg','img/DdpEOtxDDXh_03.jpg','img/Ddqnsh4jC_H.jpg','img/DdrNjORjCAF.jpg','img/DdJZPgmjEJM_04.jpg','img/kutija-iskra.jpg'];
+const state = {script:'lat', color:0, ship:0, sel:{}, cart:0};
+ITEMS.forEach(it => state.sel[it.id] = {on:it.on, v:0});
+const $ = id => document.getElementById(id);
+const fmt = n => n.toLocaleString('sr-RS').replace(/,/g,'.') + ' din';
+
+/* Latin -> Cyrillic for the name preview */
+const DI = {'lj':'љ','nj':'њ','dž':'џ','Lj':'Љ','LJ':'Љ','Nj':'Њ','NJ':'Њ','Dž':'Џ','DŽ':'Џ'};
+const MAP = {a:'а',b:'б',c:'ц',č:'ч',ć:'ћ',d:'д',đ:'ђ',e:'е',f:'ф',g:'г',h:'х',i:'и',j:'ј',k:'к',l:'л',m:'м',n:'н',o:'о',p:'п',r:'р',s:'с',š:'ш',t:'т',u:'у',v:'в',z:'з',ž:'ж'};
+function toCyr(s){
+  let out=''; for(let i=0;i<s.length;i++){
+    const two=s.slice(i,i+2); if(DI[two]){out+=DI[two]; i++; continue;}
+    const ch=s[i], lo=ch.toLowerCase(), m=MAP[lo];
+    out += m ? (ch===lo ? m : m.toUpperCase()) : ch;
+  } return out;
+}
+const babyName = () => { const n=$('babyName').value.trim(); return n ? (state.script==='cyr' ? toCyr(n) : n) : ''; };
+
+function renderThumbs(){
+  const cur=$('stageImg').getAttribute('src');
+  $('thumbs').innerHTML = GALLERY.map(src=>`<button type="button" class="${src===cur?'on':''}" data-src="${src}" aria-label="Prikaži sliku"><img src="${src}" alt=""></button>`).join('');
+  $('thumbs').querySelectorAll('button').forEach(b=>b.onclick=()=>showImg(b.dataset.src));
+}
+function showImg(src){
+  const el=$('stageImg'); if(el.getAttribute('src')===src) return; el.style.opacity=0;
+  setTimeout(()=>{el.src=src; el.style.opacity=1;},160);
+  $('thumbs').querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.src===src));
+}
+function renderItems(){
+  $('items').innerHTML = ITEMS.map(it=>{
+    const s=state.sel[it.id], v=it.vars[s.v];
+    const subs = it.vars.length>1 ? `<div class="sub">${it.vars.map((x,i)=>`<button type="button" class="pill ${i===s.v?'on':''}" data-id="${it.id}" data-v="${i}">${x.l}${it.vars.some(y=>y.p!==x.p)?' · '+fmt(x.p):''}</button>`).join('')}</div>` : '';
+    return `<div class="item ${s.on?'on':''}"><label class="top"><img src="${it.img}" alt=""><span class="t"><b>${it.name}</b><small>${it.info}</small></span><span class="p">${it.from?'od ':''}${fmt(v.p)}</span><input type="checkbox" data-id="${it.id}" ${s.on?'checked':''}></label>${subs}</div>`;
+  }).join('');
+  $('items').querySelectorAll('input').forEach(i=>i.onchange=()=>{state.sel[i.dataset.id].on=i.checked; renderItems(); update();});
+  $('items').querySelectorAll('.pill').forEach(b=>b.onclick=()=>{state.sel[b.dataset.id].v=+b.dataset.v; renderItems(); update();});
+}
+function renderColors(){
+  $('colors').innerHTML = COLORS.map((c,i)=>`<button type="button" class="sw ${i===state.color?'on':''}" data-i="${i}"><i style="background:${c.c}"></i>${c.name}</button>`).join('');
+  $('colors').querySelectorAll('button').forEach(b=>b.onclick=()=>{state.color=+b.dataset.i; renderColors(); if($('boxOn').checked) showImg(COLORS[state.color].img); update();});
+}
+function renderShip(){
+  $('ship').innerHTML = SHIP.map((s,i)=>`<label><input type="radio" name="ship" value="${i}" ${i===state.ship?'checked':''}><span>${s.name}<small>${s.info}</small></span><b>od ${fmt(s.p)}</b></label>`).join('');
+  $('ship').querySelectorAll('input').forEach(i=>i.onchange=()=>{state.ship=+i.value; update();});
+}
+const chosen = () => ITEMS.filter(it=>state.sel[it.id].on).map(it=>({it, v:it.vars[state.sel[it.id].v]}));
+function totals(){
+  const items=chosen(); const box=$('boxOn').checked?750:0;
+  const goods=items.reduce((s,x)=>s+x.v.p,0)+box;
+  return {items, box, goods, ship:SHIP[state.ship].p, from:items.some(x=>x.it.from)};
+}
+function update(){
+  const n=babyName(), c=COLORS[state.color], boxOn=$('boxOn').checked, t=totals();
+  $('nameCount').textContent = `${$('babyName').value.length} / 14`;
+  $('boxName').textContent = n || 'Ime';
+  $('box').style.background = c.c;
+  $('box').classList.toggle('off', !boxOn);
+  $('boxDed').textContent = $('dedication').value.trim();
+  $('boxNote').textContent = boxOn ? `${c.name} kutija, ime zlatnim slovima na poklopcu. Pre izrade dobijate pripremu na odobrenje.` : 'Bez kutije. Uključite je u koraku 3 ako želite poklon pakovanje.';
+  $('pickCount').textContent = `${t.items.length} izabrano`;
+  const pre = t.from ? 'od ' : '';
+  $('price').textContent = pre + fmt(t.goods);
+  $('stickyPrice').textContent = pre + fmt(t.goods);
+  $('stickyName').textContent = `Poklon set${n?' · '+n:''} · ${t.items.length+(t.box?1:0)} kom.`;
+  const lines = t.items.map(x=>`<div class="l"><span>${x.it.name}${x.it.vars.length>1?' ('+x.v.l.toLowerCase()+')':''}</span><span>${x.it.from?'od ':''}${fmt(x.v.p)}</span></div>`);
+  if(t.box) lines.push(`<div class="l"><span>Kutija sa imenom (${c.name.toLowerCase()})</span><span>${fmt(750)}</span></div>`);
+  if(!lines.length) lines.push('<div class="l"><span>Izaberite bar jedan proizvod.</span><span></span></div>');
+  lines.push(`<div class="l"><span>Dostava: ${SHIP[state.ship].name.toLowerCase()}</span><span>od ${fmt(t.ship)}</span></div>`);
+  lines.push(`<div class="l tot"><span>Ukupno sa dostavom</span><span>od ${fmt(t.goods+t.ship)}</span></div>`);
+  $('summary').innerHTML = lines.join('');
+}
+function summary(){
+  const t=totals(), n=babyName();
+  const L=[`Zdravo! Želela bih poklon set sa imenom: ${n||'(ime ću javiti)'} (${state.script==='cyr'?'ćirilica':'latinica'}).`];
+  t.items.forEach(x=>L.push(`- ${x.it.name}${x.it.vars.length>1?': '+x.v.l:''}`));
+  if(t.box){ L.push(`- Kutija sa imenom, ${COLORS[state.color].name.toLowerCase()}`); const d=$('dedication').value.trim(); if(d) L.push(`  Posveta: ${d}`); }
+  L.push(`Dostava: ${SHIP[state.ship].name}`);
+  const note=$('note').value.trim(); if(note) L.push(`Napomena: ${note}`);
+  L.push(`Okvirno: ${t.from?'od ':''}${fmt(t.goods)} + poštarina`);
+  return L.join('\n');
+}
+let toastT;
+function toast(html){const el=$('toast'); el.innerHTML=html; el.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove('show'),2800);}
+function addToCart(){
+  const t=totals();
+  if(!t.items.length){ toast('Izaberite bar jedan proizvod za set.'); return; }
+  if(!$('babyName').value.trim()){ toast('Upišite bebino ime, da znamo šta personalizujemo. ✍️'); $('babyName').focus(); return; }
+  state.cart+=1; const b=$('cartCount'); b.textContent=state.cart; b.classList.add('bump'); setTimeout(()=>b.classList.remove('bump'),200);
+  toast(`🎁 Dodato u korpu: <b>Poklon set · ${babyName()}</b>`);
+}
+function sendDM(){
+  const text=summary(); const go=()=>window.open('https://ig.me/m/unique_sign_','_blank','noopener');
+  if(navigator.clipboard) navigator.clipboard.writeText(text).then(()=>{toast('💌 Porudžbina je kopirana. Nalepite je u poruku.'); setTimeout(go,700);}, go);
+  else go();
+}
+document.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>{state.script=b.dataset.s; document.querySelectorAll('.seg button').forEach(x=>x.classList.toggle('on',x===b)); update();});
+['babyName','dedication'].forEach(id=>$(id).addEventListener('input',update));
+$('boxOn').addEventListener('change',update);
+new IntersectionObserver(([e])=>$('stickyBuy').classList.toggle('show',!e.isIntersecting && e.boundingClientRect.top<0)).observe($('addBtn'));
+renderThumbs(); renderItems(); renderColors(); renderShip(); update();
+</script>
+<script>
+/* mobile menu: collects the header's nav links into one dropdown */
+(function(){var h=document.querySelector('header.site'),b=h&&h.querySelector('.menu-btn');if(!b)return;
+var p=document.createElement('nav');p.className='mobile-nav';p.setAttribute('aria-label','Meni');
+h.querySelectorAll('nav.main a').forEach(function(a){var c=a.cloneNode(true);c.removeAttribute('class');p.appendChild(c)});
+p.style.background=getComputedStyle(document.body).backgroundColor;h.appendChild(p);
+b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+p.addEventListener('click',function(e){if(e.target.closest('a')){h.classList.remove('menu-open');b.setAttribute('aria-expanded','false')}});})();
+</script>
+</body>
+</html>

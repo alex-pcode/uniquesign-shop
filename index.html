@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Unique Sign — Personalizovani pokloni za trudnice i bebe</title>
+<meta name="description" content="Radosnica sa imenom, lančići za cuclu, peškiri sa vezom, dnevnik za trudnice i kutije sa imenom. Sve personalizovano imenom po vašoj želji.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Mulish:wght@400;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1f92cb; --blue-deep:#136f9e; --blue-soft:#e6f3fa;
+  --coral:#f08d6e; --coral-deep:#c9603f; --coral-soft:#fdeee8;
+  --blush:#f6dcdc; --mint:#dcefeb; --gold:#b8913a;
+  --paper:#fffdfb; --ink:#23394a; --muted:#6c7a86; --line:#eadfd8;
+  --gold-grad:linear-gradient(100deg,#a67c2e 0%,#e7c874 45%,#b8913a 70%,#e9d08a 100%);
+  --radius:22px; --shadow:0 16px 36px -18px rgba(35,57,74,.32);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Mulish",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.05}
+.name{font-family:"Great Vibes",cursive;font-weight:400;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .08em}
+.coral{color:var(--coral-deep);font-style:italic}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:15px 28px;border-radius:999px;font-weight:800;font-size:15px;border:2px solid var(--blue);transition:transform .15s,background .15s,color .15s;cursor:pointer;font-family:inherit}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-deep);border-color:var(--blue-deep);transform:translateY(-2px)}
+.btn-line{background:#fff;color:var(--blue-deep)}
+.btn-line:hover{background:var(--blue);color:#fff}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--coral-deep)}
+.dots-rule{height:8px;background:radial-gradient(circle,var(--blue) 2.2px,transparent 2.6px) 0 50%/14px 8px repeat-x;opacity:.7}
+
+/* announce */
+.announce{background:var(--blue);color:#fff;font-size:13px;font-weight:700;text-align:center;padding:9px 16px}
+.announce b{color:#ffe1d6}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,253,251,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{width:52px;height:52px;border-radius:50%}
+.logo span{font-family:"Great Vibes",cursive;font-size:30px;color:var(--blue);line-height:1}
+.logo span i{font-style:normal;color:var(--coral)}
+nav.main{display:flex;gap:28px;font-weight:700;font-size:15px}
+nav.main a{padding:4px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+nav.main a:hover{border-color:var(--coral)}
+.icons{display:flex;gap:10px;align-items:center}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--line);background:#fff;position:relative;cursor:pointer}
+.icon-btn svg{width:19px;height:19px;stroke:var(--ink);fill:none;stroke-width:2}
+.badge{position:absolute;top:-4px;right:-4px;background:var(--coral-deep);color:#fff;font-size:11px;font-weight:800;min-width:19px;height:19px;border-radius:10px;display:grid;place-items:center}
+.menu-btn{display:none}
+.mobile-nav{display:none}
+
+/* hero */
+.hero{padding:56px 0 84px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(46px,6.2vw,84px);margin:16px 0 20px;font-weight:600}
+.hero h1 .name{font-size:1.2em;display:inline-block;line-height:.9}
+.hero p.lead{font-size:18.5px;color:var(--muted);max-width:40ch;margin-bottom:32px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-facts{display:flex;gap:30px;margin-top:40px;flex-wrap:wrap}
+.hero-facts b{display:block;font-family:"Cormorant Garamond",serif;font-size:34px;line-height:1;color:var(--blue-deep)}
+.hero-facts small{color:var(--muted);font-size:13px;font-weight:700}
+.hero-art{position:relative;aspect-ratio:1/1;max-width:560px;width:100%;justify-self:center}
+.hero-art .ring{position:absolute;inset:-4%;border-radius:50%;background:radial-gradient(circle,var(--blue) 3px,transparent 3.5px) 0 0/22px 22px;-webkit-mask:radial-gradient(circle,transparent 64%,#000 64.5%,#000 70%,transparent 70.5%);mask:radial-gradient(circle,transparent 64%,#000 64.5%,#000 70%,transparent 70.5%);opacity:.55}
+.hero-art .main{position:absolute;inset:6%;border-radius:50%;overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff;outline:2px solid var(--coral);outline-offset:6px}
+.hero-art .main img{width:100%;height:100%;object-fit:cover}
+.hero-art .mini{position:absolute;right:-2%;bottom:0;width:36%;aspect-ratio:1;border-radius:18px;overflow:hidden;border:6px solid #fff;box-shadow:var(--shadow);transform:rotate(5deg)}
+.hero-art .mini img{width:100%;height:100%;object-fit:cover}
+.tagname{position:absolute;left:0;top:8%;background:#fff;border-radius:16px;padding:10px 18px 8px;box-shadow:var(--shadow);transform:rotate(-6deg);text-align:center}
+.tagname .name{font-size:34px;line-height:1}
+.tagname small{display:block;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* usps */
+.usps{background:#fff;border-block:1px solid var(--line)}
+.usps .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.usp{display:flex;gap:14px;align-items:center;padding:22px 16px;border-right:1px dashed var(--line)}
+.usp:last-child{border-right:0}
+.usp .ic{width:44px;height:44px;flex:0 0 44px;border-radius:50%;display:grid;place-items:center;font-size:20px;background:var(--blue-soft)}
+.usp:nth-child(even) .ic{background:var(--coral-soft)}
+.usp b{display:block;font-size:15px}
+.usp small{color:var(--muted);font-size:13px}
+
+section.block{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:42px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(36px,4.6vw,58px);margin-top:8px}
+.sec-head p{color:var(--muted);max-width:46ch}
+
+/* products */
+.grid-products{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1.5px solid var(--line);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .media{position:relative;aspect-ratio:1;overflow:hidden;background:var(--blush)}
+.card .media img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .media img{transform:scale(1.05)}
+.tag{position:absolute;top:14px;left:14px;background:var(--blue);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+.tag.coral-t{background:var(--coral-deep)}
+.card .body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:26px}
+.card .desc{color:var(--muted);font-size:14px;flex:1}
+.price{font-weight:800;font-size:17px;color:var(--blue-deep);margin-top:8px}
+.price small{font-weight:700;color:var(--muted);font-size:12px;margin-right:4px}
+.card.wide{grid-column:span 2;flex-direction:row}
+.card.wide .media{flex:1.05;aspect-ratio:auto;min-height:340px}
+.card.wide .body{flex:1;justify-content:center;padding:34px}
+.card.wide h3{font-size:40px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chips span{font-size:12px;font-weight:800;background:var(--blue-soft);color:var(--blue-deep);padding:4px 10px;border-radius:999px}
+
+/* radosnica feature */
+.feature{background:var(--blue-soft);border-radius:44px;margin:0 24px;position:relative;overflow:hidden}
+.feature .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center;padding-block:90px}
+.feature h2{font-size:clamp(38px,5vw,64px);margin:10px 0 18px}
+.feature p.lead{color:#46606f;font-size:17px;max-width:46ch}
+.pages{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:26px 0 34px}
+.pages li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:15px}
+.pages li::before{content:"♥";color:var(--coral);font-size:14px;margin-top:2px}
+.feature-art{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.feature-art figure{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);background:#fff}
+.feature-art img{width:100%;height:100%;object-fit:cover}
+.feature-art .tall{grid-row:span 2}
+.feature-art figure:not(.tall){aspect-ratio:1}
+
+/* cenovnik */
+.menu-card{max-width:760px;margin:0 auto;background:#fff;border:1.5px solid var(--line);border-radius:32px;padding:56px 56px 44px;position:relative;box-shadow:var(--shadow)}
+.menu-card::before{content:"";position:absolute;inset:14px;border:1.5px solid var(--coral-soft);border-radius:22px;pointer-events:none}
+.menu-card h2{text-align:center;font-size:clamp(48px,6vw,76px);color:var(--coral-deep);font-weight:500;font-style:italic}
+.menu-card .sub{text-align:center;color:var(--muted);font-size:14px;margin:4px 0 30px}
+.row{display:flex;align-items:baseline;gap:10px;padding:9px 0;font-size:17px}
+.row .n{font-family:"Cormorant Garamond",serif;font-size:21px;font-weight:600}
+.row .n::before{content:"♥";font-family:"Mulish";font-size:13px;margin-right:10px;color:var(--coral)}
+.row:nth-child(even) .n::before{color:var(--blue)}
+.row .d{flex:1;border-bottom:2px dotted #e6cfc6;transform:translateY(-5px);min-width:20px}
+.row .p{font-weight:800;white-space:nowrap}
+.menu-card .foot{text-align:center;font-size:13px;color:var(--muted);margin-top:22px}
+
+/* dnevnik */
+.dnevnik .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.dn-art{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;align-items:end}
+.dn-art img{border-radius:20px;box-shadow:var(--shadow);aspect-ratio:1;object-fit:cover;width:100%}
+.dn-art img:last-child{transform:translateY(-30px)}
+.dnevnik h2{font-size:clamp(36px,4.6vw,58px);margin:10px 0 16px}
+.dnevnik p{color:var(--muted);font-size:17px;max-width:46ch}
+.specs{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 30px}
+.specs span{border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:10px 16px;font-weight:800;font-size:14px}
+.specs span small{display:block;font-weight:700;color:var(--muted);font-size:12px}
+
+/* process */
+.process{background:var(--coral-soft);border-radius:44px;margin:0 24px}
+.process .wrap{padding-block:84px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border-radius:var(--radius);padding:26px 22px;counter-increment:s;position:relative}
+.step::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--coral);color:#fff;font-family:"Cormorant Garamond",serif;font-weight:700;font-size:24px;margin-bottom:14px}
+.step b{display:block;font-size:17px;margin-bottom:6px}
+.step span{color:var(--muted);font-size:14.5px}
+
+/* reviews */
+.reviews{columns:3;column-gap:22px}
+.review{break-inside:avoid;margin-bottom:22px;background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:24px}
+.review .bubble{background:var(--blue-soft);border-radius:20px 20px 20px 6px;padding:14px 16px;font-size:15.5px;line-height:1.5}
+.review .bubble + .bubble{margin-top:8px}
+.review .who{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:13px;color:var(--muted);font-weight:700}
+.review .who i{width:28px;height:28px;border-radius:50%;background:conic-gradient(var(--blue),var(--coral),var(--blue))}
+.review .who b{color:var(--ink)}
+
+/* ig */
+.ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.ig-grid a{aspect-ratio:1;overflow:hidden;border-radius:16px;display:block}
+.ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ig-grid a:hover img{transform:scale(1.07)}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+details{border-bottom:1.5px solid var(--line);padding:22px 0;overflow:hidden}
+summary{cursor:pointer;list-style:none;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:24px;display:flex;justify-content:space-between;gap:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:"Mulish";font-weight:800;font-size:24px;transition:transform .2s;color:var(--coral-deep);flex:0 0 auto}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:12px;max-width:66ch}
+
+footer{background:#16303f;color:#c9d6de;padding:72px 0 28px;margin-top:96px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:52px}
+footer h4{color:#fff;font-family:"Cormorant Garamond",serif;font-size:22px;margin-bottom:12px;font-weight:600}
+footer li{list-style:none;margin:8px 0;font-size:14px}
+footer li a:hover{color:var(--coral)}
+footer .logo span{color:#fff}
+footer .legal{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;font-size:13px;opacity:.7;flex-wrap:wrap;gap:12px}
+
+@media (max-width:1024px){
+  .grid-products{grid-template-columns:repeat(2,1fr)}
+  .usps .wrap{grid-template-columns:repeat(2,1fr)}
+  .usp:nth-child(2){border-right:0}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .ig-grid{grid-template-columns:repeat(3,1fr)}
+  .reviews{columns:2}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  nav.main{display:none}
+  .menu-btn{display:grid}
+  header.site.menu-open .mobile-nav{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;padding:8px 24px 18px;border-bottom:1px solid var(--line);box-shadow:0 14px 24px -18px rgba(0,0,0,.35)}
+  .mobile-nav a{padding:13px 0;font-size:17px;border-bottom:1px solid var(--line)}
+  .mobile-nav a:last-child{border-bottom:0}
+  .hero .wrap,.feature .wrap,.dnevnik .wrap{grid-template-columns:1fr}
+  .hero{padding-top:30px}
+  .hero-art{order:-1;max-width:420px}
+  .feature,.process{margin:0 12px}
+  .feature .wrap{padding-block:56px;gap:40px}
+  section.block{padding:64px 0}
+  .card.wide{flex-direction:column}
+  .card.wide .media{aspect-ratio:4/3;min-height:0}
+  .menu-card{padding:44px 26px 34px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .grid-products{grid-template-columns:1fr}
+  .card.wide{grid-column:span 1}
+  .card.wide .body{padding:22px 20px}
+  .usps .wrap{grid-template-columns:1fr}
+  .usp{border-right:0;border-bottom:1px dashed var(--line)}
+  .usp:last-child{border-bottom:0}
+  .steps{grid-template-columns:1fr}
+  .pages{grid-template-columns:1fr}
+  .reviews{columns:1}
+  .tagname .name{font-size:26px}
+  .row{font-size:15px}
+  .row .n{font-size:18px}
+  .row .n::before{margin-right:6px}
+  .dn-art img:last-child{transform:none}
+  footer .cols{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">Sve personalizovano imenom po vašoj želji · <b>Vikendom neradni dani</b> · Šaljemo poštom širom Srbije</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Unique Sign logo"><span>Unique<i>Sign</i></span></a>
+    <nav class="main" aria-label="Glavna navigacija">
+      <a href="poklon-set.html">Poklon set</a>
+      <a href="#radosnica">Radosnica</a>
+      <a href="#dnevnik">Dnevnik za trudnice</a>
+      <a href="#kolekcija">Lančići i peškiri</a>
+      <a href="#cenovnik">Cenovnik</a>
+      <a href="#utisci">Utisci</a>
+    </nav>
+    <div class="icons">
+      <a class="icon-btn" href="#" aria-label="Pretraga"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge">0</span></a>
+      <button class="icon-btn menu-btn" aria-label="Meni" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Personalizovani pokloni za trudnice i bebe</span>
+      <h1>Poklon sa <span class="name">imenom</span>, uspomena za ceo život</h1>
+      <p class="lead">Radosnica, lančić za cuclu, peškir sa vezom i kutija sa imenom zlatnim slovima. Jedan komplet, a toliko uspomena.</p>
+      <div class="ctas">
+        <a class="btn btn-blue" href="poklon-set.html">Složite poklon set →</a>
+        <a class="btn btn-line" href="#cenovnik">Pogledajte cenovnik</a>
+      </div>
+      <div class="hero-facts">
+        <div><b>23k</b><small>pratilaca na Instagramu</small></div>
+        <div><b>1.400</b><small>din, lančić sa imenom</small></div>
+        <div><b>1.900</b><small>din, radosnica sa imenom</small></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="ring"></div>
+      <div class="main"><img src="img/Ddo9U1WDMMk.jpg" alt="Peškir sa izvezenim imenom Derija i lančić za cuclu u rozoj poklon kutiji"></div>
+      <div class="mini"><img src="img/DdpEOtxDDXh_03.jpg" alt="Radosnica Moje uspomene sa lančićem i mint kutijom sa imenom Bogdan"></div>
+      <div class="tagname"><span class="name">Derija</span><small>peškir · lančić · kutija</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="usps">
+  <div class="wrap">
+    <div class="usp"><span class="ic">✍️</span><div><b>Sa imenom po želji</b><small>Latinica ili ćirilica</small></div></div>
+    <div class="usp"><span class="ic">🖼️</span><div><b>Priprema na odobrenje</b><small>Pre izrade vidite kako izgleda</small></div></div>
+    <div class="usp"><span class="ic">🎁</span><div><b>Kutija sa imenom</b><small>Roze, plava ili mint, 750 din</small></div></div>
+    <div class="usp"><span class="ic">📦</span><div><b>Pošta i paketomat</b><small>Šaljemo širom Srbije</small></div></div>
+  </div>
+</div>
+
+<section class="block" id="kolekcija">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Ponuda</span><h2>Sve personalizovano <span class="coral">imenom</span></h2></div>
+      <p>Svaki poklon nosi bebino ime: izvezeno na peškiru, složeno od perlica na lančiću ili zlatnim slovima na radosnici i kutiji.</p>
+    </div>
+    <div class="grid-products">
+      <a class="card wide" href="poklon-set.html">
+        <div class="media"><span class="tag coral-t">Najlepši poklon</span><img src="img/DdrNjORjCAF.jpg" alt="Poklon set Antonio: peškir, bodić, lančić i radosnica"></div>
+        <div class="body">
+          <span class="eyebrow">Za babine i prvi susret</span>
+          <h3>Poklon set sa imenom</h3>
+          <p class="desc">Izaberite šta ide u set, radosnicu, lančić, peškir, bodić ili kartice, upišite bebino ime i spakujte sve u kutiju sa imenom. Cena se računa dok birate.</p>
+          <div class="chips"><span>Radosnica</span><span>Lančić</span><span>Peškir</span><span>Bodić</span><span>Kutija</span></div>
+          <span class="price"><small>npr. lančić + kutija</small>2.150 din</span>
+        </div>
+      </a>
+      <a class="card" href="#radosnica">
+        <div class="media"><span class="tag">Bestseler</span><img src="img/DdtLcHYDKsN.jpg" alt="Radosnica sa imenom Mila i lančić"></div>
+        <div class="body"><h3>Radosnica sa imenom</h3><p class="desc">„Moje uspomene“, prva bebina knjiga, sa imenom zlatnim slovima.</p><span class="price"><small>od</small>1.700 din</span></div>
+      </a>
+      <a class="card" href="poklon-set.html">
+        <div class="media"><img src="img/DdGtrdSMAP0.jpg" alt="Tri lančića za cuclu sa imenima"></div>
+        <div class="body"><h3>Lančić za cuclu</h3><p class="desc">Sa imenom od perlica i figuricom po izboru. Uz glodalicu 1.900 din.</p><span class="price">1.400 din</span></div>
+      </a>
+      <a class="card" href="poklon-set.html">
+        <div class="media"><img src="img/DdHZORKjN-J.jpg" alt="Peškir sa vezom Viktor i slonić"></div>
+        <div class="body"><h3>Peškir sa vezom</h3><p class="desc">Peškir sa kapuljačom 50×90 cm, izvezeno ime i motiv.</p><span class="price"><small>od</small>1.300 din</span></div>
+      </a>
+      <a class="card" href="#dnevnik">
+        <div class="media"><img src="img/DdqTGlKDANQ_02.jpg" alt="Dnevnik za trudnice Dok sam te čekala"></div>
+        <div class="body"><h3>Dnevnik za trudnice</h3><p class="desc">„Dok sam te čekala“, 100 strana za devet meseci čekanja.</p><span class="price">2.000 din</span></div>
+      </a>
+      <a class="card" href="poklon-set.html">
+        <div class="media"><img src="img/DduJxl8DAPz_05.jpg" alt="Bodići sa natpisom i lančić Iskra"></div>
+        <div class="body"><h3>Bodić sa natpisom</h3><p class="desc">„Bakina i dekina“, „Od glave do pete tetkino sam dete“ i drugi natpisi.</p><span class="price"><small>od</small>1.000 din</span></div>
+      </a>
+      <a class="card" href="poklon-set.html">
+        <div class="media"><img src="img/DduJxl8DAPz_03.jpg" alt="Kartice bebine prve godine"></div>
+        <div class="body"><h3>Kartice prve godine</h3><p class="desc">46 natpisa za fotografisanje bebinih prvih trenutaka.</p><span class="price">800 din</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="radosnica">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Radosnica „Moje uspomene“</span>
+      <h2>Prva bebina knjiga, <span class="coral">memories for life</span></h2>
+      <p class="lead">„Toliko sam radosnica kupovala i gledala do sada, ali ovo je jedina radosnica koja ima sve“, napisala nam je jedna mama. Unutra su prelepe ilustracije, pesmice i puno prostora za fotografije.</p>
+      <ul class="pages">
+        <li>Narukvice iz porodilišta</li>
+        <li>Otisak dlana i stopala</li>
+        <li>Prostor za prvi čuperak</li>
+        <li>Pismo roditelja, sa kovertom</li>
+        <li>„Ovo sam ja“</li>
+        <li>Moje prvo letovanje</li>
+        <li>Pesmice za čitanje bebi</li>
+        <li>Ime zlatnim slovima</li>
+      </ul>
+      <div class="ctas"><a class="btn btn-blue" href="poklon-set.html">Dodajte radosnicu u set →</a></div>
+    </div>
+    <div class="feature-art">
+      <figure class="tall"><img src="img/radosnica-pismo.jpg" alt="Stranica Pismo roditelja sa tamnoplavom kovertom"></figure>
+      <figure><img src="img/radosnica-narukvice.jpg" alt="Stranice Narukvice i Otisak dlana i stopala"></figure>
+      <figure><img src="img/radosnica-letovanje.jpg" alt="Stranica Moje prvo letovanje"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block dnevnik" id="dnevnik">
+  <div class="wrap">
+    <div class="dn-art">
+      <img src="img/DdGtJAhDB1E.jpg" alt="Dnevnik za trudnice otvoren na stranici 9 meseci trudnoće">
+      <img src="img/DdGt5T7s8vR.jpg" alt="Personalizovan dnevnik sa imenom Ana">
+    </div>
+    <div>
+      <span class="eyebrow">Dnevnik za trudnice</span>
+      <h2>Za sve uspomene koje počinju <span class="coral">još pre prvog susreta</span></h2>
+      <p>„Dok sam te čekala“ nije samo klasičan dnevnik za pisanje: ima dosta prostora za pisanje, pesmice, prostor za fotografije, razne igrice i stranu za tatine utiske. Jer trudnoća traje devet meseci, ali uspomene na nju zaslužuju da traju zauvek.</p>
+      <div class="specs">
+        <span>100 strana<small>svaka je drugačija</small></span>
+        <span>22 × 22 cm<small>format</small></span>
+        <span>3 trimestra<small>nedelju po nedelju</small></span>
+      </div>
+      <a class="btn btn-line" href="https://ig.me/m/unique_sign_" target="_blank" rel="noopener">Poručite dnevnik · 2.000 din</a>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="cenovnik" style="padding-top:0">
+  <div class="wrap">
+    <div class="menu-card">
+      <span class="eyebrow" style="display:block;text-align:center">Unique Sign</span>
+      <h2>Cenovnik</h2>
+      <p class="sub">Važi od 21. juna</p>
+      <div class="rows">
+        <div class="row"><span class="n">Radosnica Moje uspomene</span><span class="d"></span><span class="p">1.700 din</span></div>
+        <div class="row"><span class="n">Personalizovana radosnica</span><span class="d"></span><span class="p">1.900 din</span></div>
+        <div class="row"><span class="n">Radosnica sa kratkom posvetom</span><span class="d"></span><span class="p">2.000 din</span></div>
+        <div class="row"><span class="n">Dnevnik za trudnice</span><span class="d"></span><span class="p">2.000 din</span></div>
+        <div class="row"><span class="n">Lančić za dudu</span><span class="d"></span><span class="p">1.400 din</span></div>
+        <div class="row"><span class="n">Kartice bebine prve godine</span><span class="d"></span><span class="p">800 din</span></div>
+        <div class="row"><span class="n">Kartice za trudnice</span><span class="d"></span><span class="p">800 din</span></div>
+        <div class="row"><span class="n">Portikle</span><span class="d"></span><span class="p">800 din</span></div>
+        <div class="row"><span class="n">Peškiri sa vezom</span><span class="d"></span><span class="p">1.300–1.600 din</span></div>
+        <div class="row"><span class="n">Kutije sa imenom</span><span class="d"></span><span class="p">750 din</span></div>
+        <div class="row"><span class="n">Masnica za kosu</span><span class="d"></span><span class="p">750 din</span></div>
+        <div class="row"><span class="n">Bodići</span><span class="d"></span><span class="p">1.000–1.100 din</span></div>
+        <div class="row"><span class="n">Bademantili sa vezom</span><span class="d"></span><span class="p">2.000 din</span></div>
+        <div class="row"><span class="n">Igračke sa vezom</span><span class="d"></span><span class="p">1.600 din</span></div>
+      </div>
+      <p class="foot">Glodalica uz lančić: pitajte za aktuelnu cenu. Poštarina se plaća posebno.</p>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Kako poručiti</span><h2>Od imena do paketa</h2></div><p>Svaki poklon se radi posebno, za jednu bebu. Zato je najlepše kad se dogovorimo na vreme.</p></div>
+    <div class="steps">
+      <div class="step"><b>Složite poklon</b><span>Izaberite proizvode i upišite ime. Recite nam odmah kada želite da paket krene.</span></div>
+      <div class="step"><b>Priprema na odobrenje</b><span>Pre izrade vam šaljemo pripremu, da vidite ime i raspored.</span></div>
+      <div class="step"><b>Uplata unapred</b><span>Nakon potvrde o uplati počinjemo sa radom. Fiskalni račun stiže uz paket.</span></div>
+      <div class="step"><b>Šaljemo poštom</b><span>Na adresu pošte, u paketomat ili na vašu adresu, bilo gde u Srbiji.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="utisci">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Vaši utisci</span><h2>Poruke koje <span class="coral">čuvamo</span></h2></div>
+      <p>Iz našeg Instagram highlight-a „Vaši utisci“, onako kako su nam ih poslale.</p>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <div class="bubble">Toliko sam radosnica kupovala i gledala do sada, ali ovo je jedina radosnica koja ima sve - i prostor za prvi čuperak, za narukvice iz porodilišta, bebine otiske... + ono pismo roditelja. Sve je preslatko, svaka čast na profesionalnosti! 🤍</div>
+        <div class="who"><i></i><span><b>Poruka kupca</b> · radosnica</span></div>
+      </div>
+      <div class="review">
+        <div class="bubble">Predivna štampa, preslatke ilustracije, puno odeljaka, pesme.... Anastasija se hvali da je njena sada najlepša. 😊 Ostaje samo da je popunimo.</div>
+        <div class="who"><i></i><span><b>Milena</b> · radosnica</span></div>
+      </div>
+      <div class="review">
+        <div class="bubble">Stigao nam je paketic 😊</div>
+        <div class="bubble">Odusevila sam se 😍</div>
+        <div class="bubble">Lancic je ispao bas kako treba, a radosnici sam se jos vise obradovala bas ima sve sto treba ni previse ni premalo, pesmice su vam najdivnije ❤️</div>
+        <div class="who"><i></i><span><b>Poruka kupca</b> · lančić i radosnica</span></div>
+      </div>
+      <div class="review">
+        <div class="bubble">Kad Jakov izgubi a @unique_sign_ napravi novi i lepši lančić za našu dudu 🤗❤️💙</div>
+        <div class="who"><i></i><span><b>Aleksandra</b> · lančić za cuclu</span></div>
+      </div>
+      <div class="review">
+        <div class="bubble">Aleksandra stigla je porudzbina 😆 Prezadovoljna sam 😆 Hvala puno na saradnji i svaka vam cast na posvecenosti i profesionalnom pristupu musterijama. Ne susrecem se svaki dan sa tako ljubaznim i posvecenim prodavcima</div>
+        <div class="who"><i></i><span><b>Poruka kupca</b> · porudžbina</span></div>
+      </div>
+      <div class="review">
+        <div class="bubble">Preuzela sam dnevnik. I lepsi od onog cemu sam se nadala. Stvarno si postala pravi majstor. Bravoooo 👏👏💖💖</div>
+        <div class="who"><i></i><span><b>Poruka kupca</b> · dnevnik za trudnice</span></div>
+      </div>
+      <div class="review">
+        <div class="bubble">Hvala Vam! Radosnica je jos lepsa uzivo nego na slikama... Zaista su odabrani najbitniji momenti odrastanja bebe... ❤️😍</div>
+        <div class="who"><i></i><span><b>Poruka kupca</b> · radosnica</span></div>
+      </div>
+      <div class="review">
+        <div class="bubble">Sećate se da sam vas pitala za preporuke radosnica, nakon duge analize svih profila odlučila sam se za ovu 😊</div>
+        <div class="who"><i></i><span><b>Poruka kupca</b> · radosnica</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">@unique_sign_</span><h2>Jedan paket, a u njemu <span class="coral">toliko ljubavi</span></h2></div>
+      <a class="btn btn-line" href="https://www.instagram.com/unique_sign_/" target="_blank" rel="noopener">Pratite nas na Instagramu</a>
+    </div>
+    <div class="ig-grid">
+      <a href="https://www.instagram.com/p/Ddqnsh4jC_H/" target="_blank" rel="noopener"><img src="img/Ddqnsh4jC_H.jpg" alt="Set Gavrilo: peškir, lančić i radosnica"></a>
+      <a href="https://www.instagram.com/p/DdJ8371jM_5/" target="_blank" rel="noopener"><img src="img/DdJ8371jM_5.jpg" alt="Peškir i lančić Isidora"></a>
+      <a href="https://www.instagram.com/p/DduJxl8DAPz/" target="_blank" rel="noopener"><img src="img/DduJxl8DAPz.jpg" alt="Paket za Iskru: bodić, lančić, kartice"></a>
+      <a href="https://www.instagram.com/p/DdJZPgmjEJM/" target="_blank" rel="noopener"><img src="img/DdJZPgmjEJM.jpg" alt="Komplet Helena"></a>
+      <a href="https://www.instagram.com/p/Dd1fpYhDL4f/" target="_blank" rel="noopener"><img src="img/Dd1fpYhDL4f.jpg" alt="Bademantil sa vezom i lančić Iskra"></a>
+      <a href="https://www.instagram.com/p/DdpEOtxDDXh/" target="_blank" rel="noopener"><img src="img/DdpEOtxDDXh.jpg" alt="Radosnica i lančić Bogdan"></a>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" style="justify-content:center;text-align:center"><div><span class="eyebrow">Pre poručivanja</span><h2>Česta pitanja</h2></div></div>
+    <div class="faq">
+      <details open><summary>Da li ime može da bude na ćirilici?</summary><p>Može. Ime radimo onako kako ga napišete, latinicom ili ćirilicom. Radosnica, dnevnik i kartice su štampani na ćirilici.</p></details>
+      <details><summary>Kako se plaća?</summary><p>Uplata unapred je obavezna, bez izuzetaka. Nakon potvrde o uplati počinjemo sa radom, a fiskalni račun šaljemo uz paket.</p></details>
+      <details><summary>Koliko košta poštarina?</summary><p>Pakete šaljemo Post Expressom. Paket do pola kilograma na adresu pošte košta 300 din (0,5–1 kg 350 din, 1–2 kg 400 din), u paketomat od 300 din, a na vašu adresu od 420 din. Cene zavise od težine i cenovnika pošte.</p></details>
+      <details><summary>Da li radite hitne porudžbine?</summary><p>Ne. Svaki poklon se radi posebno i ime se proverava pre izrade, pa vas molimo da poručite na vreme i odmah nam kažete kada želite da paket krene. Vikendom ne radimo.</p></details>
+      <details><summary>Mogu li da zamenim proizvod?</summary><p>Proizvodi su personalizovani imenom, pa zamene ne radimo. Zato pre izrade dobijate pripremu na odobrenje. Ako niste sigurni oko veličine bodića ili boje, pitajte nas pre poručivanja.</p></details>
+      <details><summary>Da li je dnevnik personalizovan?</summary><p>Dnevnik „Dok sam te čekala“ košta 2.000 din, a može i personalizovan po vašoj želji. Za personalizovan dnevnik cenu potvrđujemo u poruci.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="logo" href="index.html"><img src="img/logo.jpg" alt=""><span>Unique<i>Sign</i></span></a>
+        <p style="margin-top:16px;font-size:14px;max-width:32ch">Personalizovani pokloni za trudnice i bebe ❤️ Vikendom neradni dani.</p></div>
+      <div><h4>Prodavnica</h4><ul><li><a href="poklon-set.html">Poklon set</a></li><li><a href="#radosnica">Radosnica</a></li><li><a href="#dnevnik">Dnevnik za trudnice</a></li><li><a href="#kolekcija">Lančići i peškiri</a></li></ul></div>
+      <div><h4>Pomoć</h4><ul><li><a href="#cenovnik">Cenovnik</a></li><li><a href="#utisci">Utisci</a></li><li><a href="#">Dostava i plaćanje</a></li><li><a href="#">Pre poručivanja</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li><a href="https://www.instagram.com/unique_sign_/" target="_blank" rel="noopener">Instagram @unique_sign_</a></li><li><a href="https://ig.me/m/unique_sign_" target="_blank" rel="noopener">Poručivanje u DM 💌</a></li><li><a href="https://www.facebook.com/cveticizakicenjeuniquesign" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Unique Sign. Sva prava zadržana.</span><span>Cene prema cenovniku brenda · poštarina se plaća posebno · Srbija</span></div>
+  </div>
+</footer>
+<script>
+/* mobile menu: collects the header's nav links into one dropdown */
+(function(){var h=document.querySelector('header.site'),b=h&&h.querySelector('.menu-btn');if(!b)return;
+var p=document.createElement('nav');p.className='mobile-nav';p.setAttribute('aria-label','Meni');
+h.querySelectorAll('nav.main a').forEach(function(a){var c=a.cloneNode(true);c.removeAttribute('class');p.appendChild(c)});
+p.style.background=getComputedStyle(document.body).backgroundColor;h.appendChild(p);
+b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+p.addEventListener('click',function(e){if(e.target.closest('a')){h.classList.remove('menu-open');b.setAttribute('aria-expanded','false')}});})();
+</script>
+</body>
+</html>
